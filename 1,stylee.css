@@ -1,0 +1,191 @@
+body{
+    margin: 20px;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
+    background-attachment: fixed;
+    background-image: url(Imagen\ fondo.png);
+    background-size: cover;}
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #385d2281;
+        padding: 10px 20px;
+        position:fixed ;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-sizing: border-box;
+    
+    }
+    
+    header h1 {
+        font-size: 24px;
+        justify-content: space-between;
+    }
+    
+    header img {
+        height: 50px;
+        align-items: flex;
+        display: flex;
+        margin-right: 10px;
+    }
+    .Register{
+        justify-content: space-between;
+        text-size-adjust: 20xp;
+    }
+    .Sesion{
+        justify-content: space-between;
+        text-size-adjust: 20xp;
+        
+    }
+    nav ul {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin: 15px;
+    }
+    
+    nav ul li a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+
+
+/* Secciones principales */
+
+main {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.content-section {
+    display: none;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.content-section.active {
+    display: flex;
+}
+
+section {
+    background-color: rgba(193, 238, 153, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+}
+
+/* Caja trasera */
+
+.caja_trasera {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: #6cdaa979;
+}
+
+.caja_trasera div {
+    margin: 20px;
+    color: rgb(249, 246, 246);
+    transition: all 0.8s;
+}
+
+/* Estilos del carrito y menú */
+
+#cart-items li, #menu-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#checkout {
+    display: block;
+    margin-top: 20px;
+}
+.presentacion{
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+text-align: center;
+}
+h3{
+    font-size: 50px;
+}
+/*pie*/
+
+footer {
+    background-color: #5c8b6893;
+    color: rgb(12, 9, 9);
+    padding: 20px 0;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-section {
+    width: 30%; 
+    padding: 10px;
+}
+
+.footer-section h3 {
+    color: #f2f2f2;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-section input[type="text"], .footer-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.footer-section input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer-section input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+@media(max-width: 768px) {
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

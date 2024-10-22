@@ -1,0 +1,159 @@
+body{
+    margin: 20px;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
+    background-attachment: fixed;
+    background-image: url(Imagen\ fondo.png);
+    background-size: cover;}
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #385d2281;
+        padding: 10px 20px;
+        position:fixed ;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-sizing: border-box;
+    
+    }
+    
+    header h1 {
+        font-size: 24px;
+        justify-content: space-between;
+    }
+    
+    header img {
+        height: 50px;
+        align-items: flex;
+        display: flex;
+        margin-right: 10px;
+    }
+    .Register{
+        justify-content: space-between;
+        text-size-adjust: 20xp;
+    }
+    .Sesion{
+        justify-content: space-between;
+        text-size-adjust: 20xp;
+        
+    }
+    nav ul {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin: 15px;
+    }
+    
+    nav ul li a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+/*menu*/
+.Menu{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 180px;
+}
+
+.marca {
+    background-color: #b5c9a3;
+    border-radius: 20px;
+    text-align: center;
+    padding: 75px;
+    width: 850px;
+}
+
+.marcalogo {
+    display: block;
+    background-color: #d6d6c2;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+}
+
+.marcalogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.marcalogo p {
+    font-size: 14px;
+    color: #3b3b3b;
+}
+
+
+/*pie*/
+
+footer {
+    background-color: #5c8b6893;
+    color: rgb(12, 9, 9);
+    padding: 20px 0;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Distribuir las secciones de manera equitativa */
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-section {
+    width: 30%; /* Asignar un ancho fijo para cada sección */
+    padding: 10px;
+}
+
+.footer-section h3 {
+    color: #f2f2f2;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-section input[type="text"], .footer-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.footer-section input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer-section input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+@media(max-width: 768px) {
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

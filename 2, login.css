@@ -1,0 +1,274 @@
+body{
+    margin: 20px;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
+    background-attachment: fixed;
+    background-image: url(Imagen\ fondo.png);
+    background-size: cover;}
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #385d2281;
+        padding: 10px 20px;
+        position:fixed ;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-sizing: border-box;
+    
+    }
+    
+    header h1 {
+        font-size: 24px;
+        justify-content: space-between;
+    }
+    
+    header img {
+        height: 50px;
+        align-items: flex;
+        display: flex;
+        margin-right: 10px;
+    }
+    .Register{
+        justify-content: space-between;
+        text-size-adjust: 20xp;
+    }
+    .Sesion{
+        justify-content: space-between;
+        text-size-adjust: 20xp;
+        
+    }
+    nav ul {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin: 15px;
+    }
+    
+    nav ul li a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+
+
+/* Estilos específicos para Sesion y Register */
+
+nav ul li a.Sesion, 
+nav ul li a.Register {
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    margin-right: 15px;
+}
+
+nav ul li a.Register {
+    left: 100px; /* Ajuste para posicionar a la derecha de "Inicia sesión" */}
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image:url(Imagen\ fondo\ login.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor {
+    position: relative;
+    width: 400px;
+    background-color: rgba(151, 197, 78, 0.587);
+    border: 2px solid rgba(153, 205, 172, 0);
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor h2 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 2.3rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.input-contenedor {
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.input-contenedor label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: rgb(0, 4, 7);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+}
+
+.input-contenedor input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px 0 5px;
+    color: aliceblue;
+}
+
+.input-contenedor i {
+    position: absolute;
+    color: aliceblue;
+    font-size: 1.6rem;
+    top: 19px;
+    right: 8px;
+}
+
+.olvidar {
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.olvidar label input {
+    margin: 3px;
+}
+
+.olvidar label a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.9em;
+}
+
+.olvidar label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    background: rgba(0, 3, 5, 0.623);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.registrar {
+    font-size: 1rem;
+    color: aliceblue;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.registrar p a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.registrar p a:hover {
+    text-decoration: underline;
+}
+
+/*pie*/
+
+footer {
+    background-color: #5c8b6893;
+    color: rgb(12, 9, 9);
+    padding: 20px 0;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Distribuir las secciones de manera equitativa */
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-section {
+    width: 30%; /* Asignar un ancho fijo para cada sección */
+    padding: 10px;
+}
+
+.footer-section h3 {
+    color: #f2f2f2;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-section input[type="text"], .footer-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.footer-section input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer-section input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+@media(max-width: 768px) {
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
